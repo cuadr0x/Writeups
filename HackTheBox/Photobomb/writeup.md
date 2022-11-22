@@ -17,7 +17,9 @@ We have two ports open: 22 (ssh) and 80 (http)
 <br>
 
 ## Web exploitation
+
 <br>
+
 The website has a basic http auth for accesing the printer functionality.
 
 ![image](./images/webAuth.png)
