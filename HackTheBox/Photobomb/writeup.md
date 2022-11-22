@@ -47,9 +47,11 @@ We use the following payload to try to get a reverse shell.
 <br>
 
 Executing sudo -l we see that we can run as root and set the environment variables of the command /opt/cleanup.sh
+
 ![image](./images/sudol.png)
 
 We can abuse this by using path hijacking, we can provide a new PATH variable to execute a script that we control if the cleanup.sh script doesn't use the full path of the binary.
+
 ![image](./images/cleanup.png)
 
 For example we can use the command find because it doesn't use the full path of the binary.
